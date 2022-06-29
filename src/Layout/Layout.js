@@ -52,7 +52,7 @@ const Layout = () => {
                 <CssBaseline/>
                 <Navbar open={open} toggleDrawer={toggleDrawer} handle={handle}/>
                 <Sidebar drawerWidth={drawerWidth} open={open} DrawerHeader={DrawerHeader}/>
-                <Main open={open} sx={{background: "#f9f9f9", minHeight: "100vh"}}>
+                <Main open={open} sx={{background: "#F2F7FF", minHeight: "100vh"}}>
                     <DrawerHeader/>
                     <Outlet/>
                 </Main>

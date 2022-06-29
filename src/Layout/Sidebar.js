@@ -1,5 +1,4 @@
-import {grey} from "@mui/material/colors";
-import {Divider, Drawer, List, ListItem, ListItemButton, ListItemText, Stack, styled, Typography} from "@mui/material";
+import {Divider, Drawer, List, ListItem, ListItemButton, ListItemText, Stack, Typography} from "@mui/material";
 import {AiOutlineDashboard} from "react-icons/ai";
 
 
@@ -18,7 +17,7 @@ const Sidebar = ({drawerWidth, open, DrawerHeader}) => {
             }}
             PaperProps={{
                 sx:{
-                    background: grey[800],
+                    background: "#FFF",
                     color: "white"
                 }
             }}
@@ -35,8 +34,8 @@ const Sidebar = ({drawerWidth, open, DrawerHeader}) => {
                     <ListItemButton>
                         <ListItemText>
                             <Stack direction="row" alignItems="center">
-                                <AiOutlineDashboard/>
-                                <Typography sx={{ml: 1}}>Dashboard</Typography>
+                                <AiOutlineDashboard color={"#0F3F62"} size={22}/>
+                                <Typography variant="subtitle1" sx={{ml: 1, fontSize: 20}} color="#0F3F62">Dashboard</Typography>
                             </Stack>
                         </ListItemText>
                     </ListItemButton>

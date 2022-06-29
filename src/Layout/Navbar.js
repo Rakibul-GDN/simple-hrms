@@ -40,7 +40,7 @@ const Navbar = ({open, toggleDrawer, handle}) => {
     }
 
     return(
-        <AppBar position="fixed" open={open} sx={{background: "linear-gradient(to right, #7474bf, #348ac7)", zIndex: (theme) => theme.zIndex.drawer + 1}}>
+        <AppBar position="fixed" open={open} sx={{background: "white", zIndex: (theme) => theme.zIndex.drawer + 1}}>
             <Toolbar>
                 <IconButton
                     color="inherit"
@@ -49,10 +49,10 @@ const Navbar = ({open, toggleDrawer, handle}) => {
                     edge="start"
                     sx={{mr: 2}}
                 >
-                    <AiOutlineMenuUnfold/>
+                    <AiOutlineMenuUnfold color={"#0F3F62"}/>
                 </IconButton>
                 <Stack sx={{width: "100%"}} direction="row" justifyContent="space-between" alignItems="center">
-                    <Typography variant="h6" noWrap component="div">
+                    <Typography variant="h6" noWrap component="div" color="#0F3F62">
                         HRMS
                     </Typography>
                     <TextField
@@ -62,13 +62,13 @@ const Navbar = ({open, toggleDrawer, handle}) => {
                         size="small"
                         InputProps={{
                             endAdornment: <InputAdornment position="end" sx={{width: "30px"}}>
-                                <IconButton variant="contained"><FiSearch/></IconButton>
+                                <IconButton variant="contained"><FiSearch color="#0F3F62"/></IconButton>
                             </InputAdornment>,
                         }}
                     />
                     <Stack direction="row" alignItems="center">
-                        <IconButton variant="contained" onClick={onToggleFullscreen}><BiFullscreen size={24} color="#FFF"/></IconButton>
-                        <IconButton variant="contained"><IoMdNotifications size={24} color="#FFF"/></IconButton>
+                        <IconButton variant="contained" onClick={onToggleFullscreen}><BiFullscreen size={24} color="#0F3F62"/></IconButton>
+                        <IconButton variant="contained"><IoMdNotifications size={24} color="#0F3F62"/></IconButton>
                         <Box>
                             <Tooltip title="Account settings">
                                 <IconButton
